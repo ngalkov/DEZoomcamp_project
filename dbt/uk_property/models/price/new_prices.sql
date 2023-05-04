@@ -16,10 +16,10 @@ SELECT id,
     town,
     district,
     county
-FROM uk_property.update
-WHERE uk_property.update.id not in (
-    SELECT uk_property.historical_prices.id
-    FROM uk_property.historical_prices
+FROM {{ source('uk_property', 'update') }}
+WHERE {{ source('uk_property', 'update') }}.id not in (
+    SELECT {{ source('uk_property', 'historical_prices') }}.id
+    FROM {{ source('uk_property', 'historical_prices') }}
     )
 )
 
