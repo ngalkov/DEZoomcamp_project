@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+- name: uk_property
+  tables:
+  - name: histopical_prices
+  - name: update
+
+
+models:
+  - name: unchanged_prices
+    description: >
+      There should be a description
+    columns:
+      - name: id
+        description: UUID
+
+  - name: new_prices
+    description: >
+      There should be a description
+    columns:
+      - name: id
+        description: UUID

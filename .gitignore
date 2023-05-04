@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+
+
+# Environments
+.venv/
+
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+
+# IDE
+.idea/
+
+
+# Large data
+*.csv
+
+
+# Terraform
+*.tfstate
+*.tfstate.*
+**.terraform
+**.terraform.lock.*
+
+
+# Prefect
+*.prefectignore
+run_monthly_update-deployment.yaml
+
+
+# Secrets
+.env
+secret.tfvars
+
+
+# Yandex certificate
+CA.pem
